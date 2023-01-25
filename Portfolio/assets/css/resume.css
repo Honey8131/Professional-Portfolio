@@ -1,0 +1,65 @@
+:root {
+    --montserrat: 'Montserrat', sans-serif;
+    --square-peg: 'Square Peg', cursive;
+    --grey-box: rgba(55, 56, 61, .5);
+    --black-box:rgba(6, 11, 10, .5);
+    --pink: #ffafaf;
+    --t-pink: rgba(255, 175, 175, .5);
+  }
+
+ /* Background Image*/ 
+body {
+    background-color: #000000;
+    background-image: url("/images/resume-cover.png");
+    background-size: cover;
+    margin: 0;
+    padding: 0px 100px;
+    /*background-repeat: no-repeat;*/
+}
+
+/*Nav bar*/
+nav {
+    display: flex;
+    justify-content: right;
+    top: 0;
+    margin: 0px 0px 80px 0px;
+}
+
+li {
+    margin: 0px 40px;
+    list-style: none;
+}
+
+a {
+    font-family: var(--montserrat);
+    color: white;
+    text-decoration-line: none;
+}
+
+a:hover {
+    color: var(--pink);
+}
+
+/*Text Content*/
+h1 {
+    font-family: var(--square-peg);
+    font-size: 55px;
+    color:var(--pink);
+    text-align: left;
+    margin-top: 40px;
+}
+
+iframe {
+    /*display: block;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    position: absolute;
+    width: 1000px;
+    height: 500px;*/
+    width: 100%;
+}
+ @media screen and (max-width: 480px) {
+    iframe {
+        width: 480px;
+    }
+}

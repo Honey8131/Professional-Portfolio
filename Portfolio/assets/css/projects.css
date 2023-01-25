@@ -1,0 +1,90 @@
+:root {
+    --montserrat: 'Montserrat', sans-serif;
+    --square-peg: 'Square Peg', cursive;
+    --grey-box: rgba(55, 56, 61, .5);
+    --black-box:rgba(6, 11, 10, .5);
+    --pink: #ffafaf;
+    --t-pink: rgba(255, 175, 175, .5);
+  }
+
+ /* Background Image*/ 
+ body {
+    background-color: #000000;
+    background-image: url("/images/about-cover.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*Nav bar*/
+nav {
+    display: flex;
+    justify-content: right;
+    margin: 40px;
+}
+
+li {
+    margin: 0px 40px;
+    list-style: none;
+}
+
+a {
+    font-family: var(--montserrat);
+    color: white;
+    text-decoration-line: none;
+}
+
+a:hover {
+    color: var(--pink);
+}
+
+/*Box*/
+#box {
+    background-color: var(--black-box);
+}
+/*Text Content*/
+h1 {
+    color: white;
+    text-align: left;
+    font-family: var(--montserrat);
+    font-size: 14px;
+    margin: 20px;
+}
+
+h2 {
+    font-family: var(--square-peg);
+    font-size: 55px;
+    color:var(--pink);
+    text-align: left;
+    margin: 0px 20px 60px 20px;
+}
+
+p {
+    color: white;
+    text-align: left;
+    font-family: var(--montserrat);
+    font-size: 14px;
+    margin: 20px;
+}
+
+/*Image*/
+ img {
+    float: right;
+    max-height: 500px;
+ }
+
+ /*Button*/
+ button {
+    display: flex;
+    align-items: left;
+    text-align: center;   
+    margin: 60px 20px;
+    background-color:var(--t-pink);
+    border: none;
+    padding: 10px 40px;
+}
+ @media screen and (min-width: 480px) {
+    .row {
+        display:flex;
+    }
+}
